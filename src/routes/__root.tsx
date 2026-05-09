@@ -72,14 +72,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Rival Fitness" },
+      { name: "description", content: "Rival Fitness Studio is a premium gym landing page showcasing elite fitness training in Kolkata." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Rival Fitness" },
+      { property: "og:description", content: "Rival Fitness Studio is a premium gym landing page showcasing elite fitness training in Kolkata." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Rival Fitness" },
+      { name: "twitter:description", content: "Rival Fitness Studio is a premium gym landing page showcasing elite fitness training in Kolkata." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/0111f2e5-6a9b-4418-89b0-4b84bc3a5ab5/id-preview-79823b5a--c2ba5f2a-8530-41ad-9039-a05431f6747e.lovable.app-1778314115294.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/0111f2e5-6a9b-4418-89b0-4b84bc3a5ab5/id-preview-79823b5a--c2ba5f2a-8530-41ad-9039-a05431f6747e.lovable.app-1778314115294.png" },
     ],
     links: [
       {
