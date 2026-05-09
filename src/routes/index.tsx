@@ -1,26 +1,52 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { NeonBackground } from "@/components/site/Background";
+import { CursorGlow } from "@/components/site/CursorGlow";
+import { Navbar } from "@/components/site/Navbar";
+import { Hero } from "@/components/site/Hero";
+import { About } from "@/components/site/About";
+import { Programs } from "@/components/site/Programs";
+import { Membership } from "@/components/site/Membership";
+import { Trainers } from "@/components/site/Trainers";
+import { Transformations } from "@/components/site/Transformations";
+import { Testimonials } from "@/components/site/Testimonials";
+import { Contact } from "@/components/site/Contact";
+import { Footer } from "@/components/site/Footer";
+import { AIChat } from "@/components/site/AIChat";
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Rival Fitness Studio — Premium Gym in Behala Chowrasta, Kolkata" },
+      {
+        name: "description",
+        content:
+          "Premium fitness training, CrossFit, strength conditioning & transformation coaching at Rival Fitness Studio, Behala Chowrasta, Kolkata. Open till 11 PM.",
+      },
+      { property: "og:title", content: "Rival Fitness Studio — Elite Gym in Kolkata" },
+      { property: "og:description", content: "Transform your body. Unlock elite performance." },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
+function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="relative min-h-screen grain">
+      <NeonBackground />
+      <CursorGlow />
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <Programs />
+        <Membership />
+        <Trainers />
+        <Transformations />
+        <Testimonials />
+        <Contact />
+      </main>
+      <Footer />
+      <AIChat />
     </div>
   );
-}
-
-function Index() {
-  return <PlaceholderIndex />;
 }
